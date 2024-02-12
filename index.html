@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculator</h1>
+      <!-- Form  -->
+      <form id="calculatorForm">
+        <!-- Operand 1  -->
+        <input type="number" id="num1" placeholder="Enter first number" />
+        <!-- Operand 2  -->
+        <input type="number" id="num2" placeholder="Enter second number" />
+        <!-- Operator  -->
+        <select id="operator">
+          <option value="add">+</option>
+          <option value="subtract">-</option>
+          <option value="multiply">*</option>
+          <option value="divide">/</option>
+        </select>
+        <!-- When user click on Calculate button calc() function will be called-->
+        <button type="button" onclick="calc()">Calculate</button>
+
+        <!-- Clear the form -->
+        <button type="button" onclick="clr()">Clear</button>
+      </form>
+      <!-- Result will be shown here  -->
+      <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
